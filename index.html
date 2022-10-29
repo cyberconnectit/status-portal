@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="5">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: white;
+  color: black;
+  float:none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  text-decoration: underline;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+p a{
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+p a span{
+  color: green;
+}
+
+.left {
+  background-color: white;
+  width: 750px;
+  border: 2px solid lightgrey;
+  padding: 10px;
+  float:left;
+  margin-top: -70px;
+}
+
+.right {
+  background-color: white;
+  width: 750px;
+  border: 2px solid lightgrey;
+  padding: 10px;
+  float:right;
+  margin-top: -70px;
+}
+.left p{
+  font-size: 20px;
+  font-weight: 100;
+}
+.right p{
+  font-size: 20px;
+  font-weight: 100;
+}
+</style>
+</head>
+<body>
+
+<nav>
+<p style="font-weight: bold; ">&nbsp;&nbsp; <a href="https://cyberconnecit.com">Cyber Con<span>nect IT</span></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="#" style="font-size: 20px;">About us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" style="font-size: 20px;">Support</a> </p>
+</nav>
+<hr>
+<br>
+<center>
+<button class="tablink" onclick="openPage('Global-Services')" id="defaultOpen">Global Services</button>
+<button class="tablink" onclick="openPage('United-Kingdom-Region')" >United Kingdom Region</button>
+<button class="tablink" onclick="openPage('European-Region')">European Region</button>
+</center>
+<br>
+<hr>
+<div id="Global-Services" class="tabcontent">
+  <div class="left">
+    <h3>Global Services<h3>
+      <p>&nbsp;&nbsp; &#9989; &nbsp; Administration</p>
+  </div>
+  
+  <div class="right">
+    <h3>Core Systems<h3>
+      <p>&nbsp;&nbsp; &#9989; &nbsp; cyberconnectit.com<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9989; &nbsp; Main Website<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9989; &nbsp; cyberconnectit.com SSO <br> <br> <br>
+
+      &nbsp;&nbsp; &#9989; &nbsp; CyberConnectIT Support<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9989; &nbsp; Support Ticket Portal<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9989; &nbsp; Knowledge Base<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9989; &nbsp; iPortal Learning Center<br>
+    </p>
+  </div>
+</div>
+
+<div id="United-Kingdom-Region" class="tabcontent">
+  <div class="left">
+    <h3>United Kingdom Region<h3></h3>
+  </div>
+  
+  <div class="right">
+    <h3>Core Systems<h3>
+      <p>&nbsp;&nbsp; &#9989; &nbsp; cyberconnectit.com<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9989; &nbsp; Main Website<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9989; &nbsp; cyberconnectit.com SSO <br> <br> <br>
+
+      &nbsp;&nbsp; &#9989; &nbsp; CyberConnectIT Support<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9989; &nbsp; Support Ticket Portal<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9989; &nbsp; Knowledge Base<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9989; &nbsp; iPortal Learning Center<br>
+    </p>
+  </div>
+</div>
+
+<div id="European-Region" class="tabcontent">
+  <div class="left">
+    <h3>European Region<h3>
+      
+  </div>
+  
+  <div class="right">
+    <h3>Core Systems<h3>
+      <p>&nbsp;&nbsp; &#9989; &nbsp; cyberconnectit.com<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9989; &nbsp; Main Website<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9989; &nbsp; cyberconnectit.com SSO <br> <br> <br>
+
+      &nbsp;&nbsp; &#9989; &nbsp; CyberConnectIT Support<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9989; &nbsp; Support Ticket Portal<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9989; &nbsp; Knowledge Base<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9989; &nbsp; iPortal Learning Center<br>
+    </p>
+  </div>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html> 
